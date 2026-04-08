@@ -1,43 +1,29 @@
-# React Training - Class 1
+# React Training - Class 2
 
-This repository contains the source code for the first class of my React training series on YouTube.
+This repository contains the source code for Class 2 of my React training series on YouTube.
 
-In this class, we covered:
+In this class, we focused on understanding the project structure in detail and creating a new reusable component by building a `Header` component.
 
-- what React is and why it is used
-- the significance of components in React applications
-- the tools required to start React development
-- how to create a new React + JavaScript project using Vite
-- how to remove the default boilerplate and keep the project clean
+## What We Covered In This Class
+
+- understanding the overall React project structure
+- learning the purpose of important files and folders
+- understanding how `main.jsx` connects React to the DOM
+- understanding the role of `App.jsx` in the application
+- creating a new component inside a separate folder
+- importing and using the `Header` component inside `App.jsx`
 
 ## What You Will Find In This Repo
 
-This codebase is intentionally simple because it is meant for beginners.
+This codebase is still beginner-friendly and intentionally simple so learners can clearly understand how a React project is organized.
 
 It includes:
 
-- a fresh React app created with Vite
-- React wired through `src/main.jsx`
-- a basic `App` component in `src/App.jsx`
-- minimal global styling in `src/index.css`
-- boilerplate files cleaned up for easier learning
-
-## Prerequisites
-
-Before starting React development, make sure you have:
-
-- Node.js installed
-- Visual Studio Code installed
-
-Node.js is needed to install packages and run the development server.
-VS Code is recommended as the code editor used to write and manage the project.
-
-## Tech Stack
-
-- React
-- JavaScript
-- Vite
-- ESLint
+- a React app created with Vite
+- the React entry point in `src/main.jsx`
+- the main app component in `src/App.jsx`
+- a new `Header` component in `src/components/header/Header.jsx`
+- basic styling files such as `src/App.css` and `src/index.css`
 
 ## Project Structure
 
@@ -45,8 +31,12 @@ VS Code is recommended as the code editor used to write and manage the project.
 udemy/
 |-- public/
 |-- src/
-|   |-- App.jsx
+|   |-- assets/
+|   |-- components/
+|   |   |-- header/
+|   |   |   |-- Header.jsx
 |   |-- App.css
+|   |-- App.jsx
 |   |-- index.css
 |   |-- main.jsx
 |-- index.html
@@ -59,20 +49,36 @@ udemy/
 `src/main.jsx`
 
 - entry point of the React application
-- renders the root `App` component
+- renders the `App` component inside the root element
 
 `src/App.jsx`
 
-- contains the main component shown in this lesson
-- demonstrates a simple React component structure
+- acts as the main component of the app
+- imports and displays the `Header` component
+
+`src/components/header/Header.jsx`
+
+- contains the `Header` component created in this class
+- shows how to organize components in separate folders
 
 `src/index.css`
 
-- contains the current global styles for the page
+- contains global styles for the project
 
 `index.html`
 
 - provides the root element where the React app mounts
+
+## Why This Class Is Important
+
+Before building bigger React applications, it is important to understand where files should live and how components are organized.
+
+This class helps learners understand:
+
+- how a React project is structured
+- why components should be separated into their own files
+- how to keep code cleaner and easier to manage
+- how one component can be imported into another
 
 ## Getting Started
 
@@ -102,31 +108,29 @@ npm run preview
 
 ## Current Output
 
-At this stage, the app renders a simple heading and paragraph so learners can focus on understanding:
+At this stage, the app renders:
 
-- how React boots up
-- how components are created
-- where application code lives
-- how a cleaned project looks after removing starter boilerplate
+- a `Header` component with the title `Udemy`
+- a paragraph inside the main `App` component
+
+This keeps the example simple so learners can focus on component structure and file organization.
 
 ## Learning Goal Of This Class
 
-The goal of this first class is to build a strong foundation before moving to more advanced React topics.
-
 After this class, learners should understand:
 
-- what React does
-- why components are important
-- which tools are required to begin
-- how to create and run a React project locally
-- how to start with a clean project structure
+- the basic folder structure of a React project
+- the role of `main.jsx`, `App.jsx`, and component files
+- how to create a new component
+- how to import and use that component inside the app
+- how to organize beginner React projects in a clean way
 
 ## Notes
 
-- This project uses React with JavaScript, not TypeScript.
-- The default Vite starter content has been removed for clarity.
-- This repository is part of a beginner-friendly React learning series.
+- This project uses React with JavaScript.
+- The project is built using Vite.
+- This repository is part of a beginner-friendly React learning series on YouTube.
 
 ## Follow Along
 
-If you are coming from YouTube, clone this repository, run the project locally, and use it as your starting point while learning React step by step.
+If you are coming from YouTube, clone this repository, run the project locally, and use it to follow along with Class 2 step by step.
