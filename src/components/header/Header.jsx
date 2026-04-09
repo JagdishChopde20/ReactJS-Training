@@ -1,7 +1,9 @@
+import './Header.css';
+
 function Header() {
   return (
-    <header>
-      <h1>Udemy</h1>
+    <header className='app-bar'>
+      <h2 className='heading'>Udemy</h2>
     </header>
   );
 }
