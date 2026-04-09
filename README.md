@@ -1,29 +1,28 @@
-# React Training - Class 2
+# React Training - Class 3
 
-This repository contains the source code for Class 2 of my React training series on YouTube.
+This repository contains the source code for Class 3 of my React training series on YouTube.
 
-In this class, we focused on understanding the project structure in detail and creating a new reusable component by building a `Header` component.
+In this class, the focus is on adding CSS styling inside components. We created a separate `Header.css` file, imported it into `Header.jsx`, and used it to style the app bar.
 
 ## What We Covered In This Class
 
-- understanding the overall React project structure
-- learning the purpose of important files and folders
-- understanding how `main.jsx` connects React to the DOM
-- understanding the role of `App.jsx` in the application
-- creating a new component inside a separate folder
-- importing and using the `Header` component inside `App.jsx`
+- creating a separate CSS file for a component
+- importing a CSS file inside a React component
+- applying class names in JSX
+- styling the `Header` component as an app bar
+- keeping component code and component styles organized together
 
 ## What You Will Find In This Repo
 
-This codebase is still beginner-friendly and intentionally simple so learners can clearly understand how a React project is organized.
+This codebase is intentionally simple and beginner-friendly so learners can clearly understand how styling works in a React component-based structure.
 
 It includes:
 
 - a React app created with Vite
-- the React entry point in `src/main.jsx`
 - the main app component in `src/App.jsx`
-- a new `Header` component in `src/components/header/Header.jsx`
-- basic styling files such as `src/App.css` and `src/index.css`
+- a `Header` component in `src/components/header/Header.jsx`
+- a component-specific stylesheet in `src/components/header/Header.css`
+- global styling files such as `src/App.css` and `src/index.css`
 
 ## Project Structure
 
@@ -31,9 +30,9 @@ It includes:
 udemy/
 |-- public/
 |-- src/
-|   |-- assets/
 |   |-- components/
 |   |   |-- header/
+|   |   |   |-- Header.css
 |   |   |   |-- Header.jsx
 |   |-- App.css
 |   |-- App.jsx
@@ -46,39 +45,44 @@ udemy/
 
 ## Important Files
 
-`src/main.jsx`
+`src/components/header/Header.jsx`
 
-- entry point of the React application
-- renders the `App` component inside the root element
+- contains the `Header` component
+- imports `Header.css`
+- applies class names used for styling the app bar and heading
+
+`src/components/header/Header.css`
+
+- contains the styles for the `Header` component
+- styles the app bar background and heading text
 
 `src/App.jsx`
 
-- acts as the main component of the app
-- imports and displays the `Header` component
-
-`src/components/header/Header.jsx`
-
-- contains the `Header` component created in this class
-- shows how to organize components in separate folders
+- imports and renders the `Header` component
+- keeps the example simple so learners can focus on styling concepts
 
 `src/index.css`
 
 - contains global styles for the project
 
-`index.html`
-
-- provides the root element where the React app mounts
-
 ## Why This Class Is Important
 
-Before building bigger React applications, it is important to understand where files should live and how components are organized.
+When building React applications, styling components properly is just as important as creating them.
 
 This class helps learners understand:
 
-- how a React project is structured
-- why components should be separated into their own files
-- how to keep code cleaner and easier to manage
-- how one component can be imported into another
+- how to keep styles in a separate CSS file
+- how to connect CSS files with React components
+- how `className` is used in JSX
+- how to organize component files and styles in the same folder
+
+## Current Output
+
+At this stage, the app renders:
+
+- a `Header` component with the title `Udemy`
+- a styled app bar with background color and heading text color
+- a paragraph in the main app below the header
 
 ## Getting Started
 
@@ -106,24 +110,14 @@ Preview the production build:
 npm run preview
 ```
 
-## Current Output
-
-At this stage, the app renders:
-
-- a `Header` component with the title `Udemy`
-- a paragraph inside the main `App` component
-
-This keeps the example simple so learners can focus on component structure and file organization.
-
 ## Learning Goal Of This Class
 
 After this class, learners should understand:
 
-- the basic folder structure of a React project
-- the role of `main.jsx`, `App.jsx`, and component files
-- how to create a new component
-- how to import and use that component inside the app
-- how to organize beginner React projects in a clean way
+- how to create a component-level CSS file
+- how to import CSS into a React component
+- how to apply styles using `className`
+- how to keep React component code and styling organized
 
 ## Notes
 
@@ -133,4 +127,4 @@ After this class, learners should understand:
 
 ## Follow Along
 
-If you are coming from YouTube, clone this repository, run the project locally, and use it to follow along with Class 2 step by step.
+If you are coming from YouTube, clone this repository, run the project locally, and use it to follow along with Class 3 step by step.
