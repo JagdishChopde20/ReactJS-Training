@@ -1,28 +1,30 @@
-# React Training - Class 3
+# React Training - Class 4
 
-This repository contains the source code for Class 3 of my React training series on YouTube.
+This repository contains the source code for Class 4 of my React training series on YouTube.
 
-In this class, the focus is on adding CSS styling inside components. We created a separate `Header.css` file, imported it into `Header.jsx`, and used it to style the app bar.
+In this class, the focus is on understanding expressions in JSX. We used JSX expressions to display variable values, perform arithmetic operations, call functions, render content conditionally, and even return JSX conditionally inside the UI.
 
 ## What We Covered In This Class
 
-- creating a separate CSS file for a component
-- importing a CSS file inside a React component
-- applying class names in JSX
-- styling the `Header` component as an app bar
-- keeping component code and component styles organized together
+- extracting variable values using JSX expressions
+- performing arithmetic operations inside JSX
+- calling JavaScript functions inside JSX
+- using conditional expressions in JSX
+- rendering JSX conditionally inside expressions
+- understanding the limitation of JSX expressions: expressions are allowed, but statements are not
 
 ## What You Will Find In This Repo
 
-This codebase is intentionally simple and beginner-friendly so learners can clearly understand how styling works in a React component-based structure.
+This codebase is intentionally simple and beginner-friendly so learners can clearly understand how JSX expressions work inside a React component.
 
 It includes:
 
 - a React app created with Vite
 - the main app component in `src/App.jsx`
 - a `Header` component in `src/components/header/Header.jsx`
-- a component-specific stylesheet in `src/components/header/Header.css`
-- global styling files such as `src/App.css` and `src/index.css`
+- examples of variable interpolation in JSX
+- examples of arithmetic and function calls in JSX
+- examples of conditional rendering using expressions
 
 ## Project Structure
 
@@ -30,6 +32,7 @@ It includes:
 udemy/
 |-- public/
 |-- src/
+|   |-- assets/
 |   |-- components/
 |   |   |-- header/
 |   |   |   |-- Header.css
@@ -45,21 +48,24 @@ udemy/
 
 ## Important Files
 
+`src/App.jsx`
+
+- contains all the JSX expression examples used in this class
+- shows how to display variables inside JSX
+- demonstrates arithmetic operations like `2 + 5`
+- calls a function directly inside JSX
+- uses ternary expressions for conditional output
+- shows conditional rendering of buttons using expressions
+- highlights that statements such as `if...else` cannot be written directly inside JSX
+
 `src/components/header/Header.jsx`
 
-- contains the `Header` component
-- imports `Header.css`
-- applies class names used for styling the app bar and heading
+- contains the reusable `Header` component
+- is rendered at the top of the app
 
 `src/components/header/Header.css`
 
 - contains the styles for the `Header` component
-- styles the app bar background and heading text
-
-`src/App.jsx`
-
-- imports and renders the `Header` component
-- keeps the example simple so learners can focus on styling concepts
 
 `src/index.css`
 
@@ -67,22 +73,25 @@ udemy/
 
 ## Why This Class Is Important
 
-When building React applications, styling components properly is just as important as creating them.
+JSX becomes much more powerful when you understand how to use JavaScript expressions inside it.
 
 This class helps learners understand:
 
-- how to keep styles in a separate CSS file
-- how to connect CSS files with React components
-- how `className` is used in JSX
-- how to organize component files and styles in the same folder
+- how to mix JavaScript values with JSX markup
+- how to write dynamic UI using expressions
+- how to use conditional logic in a React-friendly way
+- why JSX allows expressions but does not allow statements directly inside markup
 
 ## Current Output
 
 At this stage, the app renders:
 
-- a `Header` component with the title `Udemy`
-- a styled app bar with background color and heading text color
-- a paragraph in the main app below the header
+- a `Header` component at the top
+- a greeting using a variable value
+- the result of an arithmetic expression
+- the return value of a function call
+- conditional text using a ternary operator
+- conditional `Login` or `Logout` button rendering using JSX expressions
 
 ## Getting Started
 
@@ -114,10 +123,12 @@ npm run preview
 
 After this class, learners should understand:
 
-- how to create a component-level CSS file
-- how to import CSS into a React component
-- how to apply styles using `className`
-- how to keep React component code and styling organized
+- how to use JavaScript expressions inside JSX
+- how to display variable values dynamically
+- how to perform simple calculations inside JSX
+- how to call functions from JSX
+- how to use conditional expressions for rendering
+- the difference between expressions and statements in JSX
 
 ## Notes
 
@@ -127,4 +138,4 @@ After this class, learners should understand:
 
 ## Follow Along
 
-If you are coming from YouTube, clone this repository, run the project locally, and use it to follow along with Class 3 step by step.
+If you are coming from YouTube, clone this repository, run the project locally, and use it to follow along with Class 4 step by step while practicing JSX expressions on your own.
