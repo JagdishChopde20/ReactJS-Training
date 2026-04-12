@@ -1,39 +1,41 @@
-# React Training - Class 4
+# React Training - Class 5
 
-This repository contains the source code for Class 4 of my React training series on YouTube.
+This repository contains the source code for Class 5 of my React training series on YouTube.
 
-In this class, the focus is on understanding expressions in JSX. We used JSX expressions to display variable values, perform arithmetic operations, call functions, render content conditionally, and even return JSX conditionally inside the UI.
+In this class, the focus is on understanding Props (short for Properties) in React. We learned how to pass data from a parent component to a child component, how props are received inside a component, how to work with multiple props and different data types, and why props are read-only.
 
 ## What We Covered In This Class
 
-- extracting variable values using JSX expressions
-- performing arithmetic operations inside JSX
-- calling JavaScript functions inside JSX
-- using conditional expressions in JSX
-- rendering JSX conditionally inside expressions
-- understanding the limitation of JSX expressions: expressions are allowed, but statements are not
+- basic props example with a hands-on demo
+- props as function parameters
+- passing multiple props
+- passing different data types through props
+- understanding that props are read-only
 
 ## What You Will Find In This Repo
 
-This codebase is intentionally simple and beginner-friendly so learners can clearly understand how JSX expressions work inside a React component.
+This codebase is intentionally simple and beginner-friendly so learners can clearly understand how props work in React components.
 
 It includes:
 
 - a React app created with Vite
 - the main app component in `src/App.jsx`
-- a `Header` component in `src/components/header/Header.jsx`
-- examples of variable interpolation in JSX
-- examples of arithmetic and function calls in JSX
-- examples of conditional rendering using expressions
+- a reusable `Header` component
+- a reusable `CourseItem` component
+- examples of passing props from parent to child
+- a simple demonstration showing that props cannot be modified inside the child component
 
 ## Project Structure
 
 ```text
 udemy/
 |-- public/
+|   |-- favicon.svg
+|   |-- icons.svg
 |-- src/
-|   |-- assets/
 |   |-- components/
+|   |   |-- course-item/
+|   |   |   |-- CourseItem.jsx
 |   |   |-- header/
 |   |   |   |-- Header.css
 |   |   |   |-- Header.jsx
@@ -50,48 +52,40 @@ udemy/
 
 `src/App.jsx`
 
-- contains all the JSX expression examples used in this class
-- shows how to display variables inside JSX
-- demonstrates arithmetic operations like `2 + 5`
-- calls a function directly inside JSX
-- uses ternary expressions for conditional output
-- shows conditional rendering of buttons using expressions
-- highlights that statements such as `if...else` cannot be written directly inside JSX
+- renders the `Header` component
+- imports and uses the `CourseItem` component multiple times
+- passes the `courseName` prop from parent to child
+- demonstrates how props make components reusable
+
+`src/components/course-item/CourseItem.jsx`
+
+- receives props inside the component
+- displays `props.courseName` inside a list item
+- includes a commented example showing that props are read-only
 
 `src/components/header/Header.jsx`
 
 - contains the reusable `Header` component
 - is rendered at the top of the app
 
-`src/components/header/Header.css`
-
-- contains the styles for the `Header` component
-
-`src/index.css`
-
-- contains global styles for the project
-
 ## Why This Class Is Important
 
-JSX becomes much more powerful when you understand how to use JavaScript expressions inside it.
+Props are one of the most important concepts in React because they allow components to communicate with each other.
 
 This class helps learners understand:
 
-- how to mix JavaScript values with JSX markup
-- how to write dynamic UI using expressions
-- how to use conditional logic in a React-friendly way
-- why JSX allows expressions but does not allow statements directly inside markup
+- how parent components send data to child components
+- how child components receive and use that data
+- how the same component can be reused with different values
+- why props should never be changed inside the receiving component
 
 ## Current Output
 
 At this stage, the app renders:
 
 - a `Header` component at the top
-- a greeting using a variable value
-- the result of an arithmetic expression
-- the return value of a function call
-- conditional text using a ternary operator
-- conditional `Login` or `Logout` button rendering using JSX expressions
+- an ordered list of course names
+- repeated `CourseItem` components with different `courseName` prop values
 
 ## Getting Started
 
@@ -123,12 +117,11 @@ npm run preview
 
 After this class, learners should understand:
 
-- how to use JavaScript expressions inside JSX
-- how to display variable values dynamically
-- how to perform simple calculations inside JSX
-- how to call functions from JSX
-- how to use conditional expressions for rendering
-- the difference between expressions and statements in JSX
+- what props are in React
+- how to pass props from one component to another
+- how to access props inside a child component
+- how to pass multiple values and different data types as props
+- why props are immutable and read-only
 
 ## Notes
 
@@ -138,4 +131,4 @@ After this class, learners should understand:
 
 ## Follow Along
 
-If you are coming from YouTube, clone this repository, run the project locally, and use it to follow along with Class 4 step by step while practicing JSX expressions on your own.
+If you are coming from YouTube, clone this repository, run the project locally, and follow along with Class 5 step by step while practicing React props on your own.
