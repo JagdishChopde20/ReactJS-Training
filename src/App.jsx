@@ -1,6 +1,7 @@
 import './App.css'
 import Header from './components/header/Header'
 import CourseItem from './components/course-item/CourseItem'
+import Card from './components/ui/card/Card'
 
 function App() {
   // js code
@@ -16,6 +17,13 @@ function App() {
         <CourseItem courseName="React" />
         <CourseItem courseName="Angular" />
       </ol>
+
+      <hr />
+      <Card>
+        <h1>Hello, Guest!</h1>
+        <button>Login</button>
+        <br /><br />
+      </Card>
     </div>
   )
 }

@@ -1,8 +1,14 @@
+import './CourseItem.css';
+import Card from '../ui/card/Card';
+
 function CourseItem(props) {
-    // props.courseName = 'Python'; <- Error
 
     return (
-        <li> { props.courseName } </li>
+        <li>
+            <Card>
+                 { props.courseName }
+            </Card>
+        </li>
     )
 }
 
