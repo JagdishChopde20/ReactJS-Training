@@ -1,5 +1,7 @@
 .app-bar {
   background-color: blueviolet;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+;
 
   .heading {
     margin: 0;
