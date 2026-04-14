@@ -8,7 +8,7 @@ function App() {
   
   return (
     <div>
-      <Header />
+      <Header>Udemy</Header>
       
       <ol id='id1'>
         <CourseItem courseName="HTML"/>
