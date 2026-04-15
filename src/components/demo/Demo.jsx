@@ -1,18 +1,31 @@
 import Header from "../header/Header";
 
 const Demo = () => {
-
-    // function greetUser() {
-    //     return 'Hello, Jagdish!';
-    // }
-
     const greetUser = (greetMsg, userName) => `${greetMsg}, ${userName}!`;
+
+    const changeHandler = (event) => {
+        console.log(event.target.value);
+    }
+
+    const clickHandler = (userName) => {
+        alert('My name is ' + userName);
+    }
 
     return (
         <div>
-            <Header>Arrow Functions</Header>
+            <Header>Event Handling</Header>
 
             <h1> { greetUser('Hey', 'Jagdish') } </h1>
+
+            <button onClick={() => { console.log('Button Clicked!'); }}>Click Me</button>
+
+            <hr />
+
+            <input type="text" onChange={changeHandler} />
+
+            <hr />
+
+            <button onClick={() => clickHandler('Sandeep')}>Who Am I</button>
         </div>
     );
 }

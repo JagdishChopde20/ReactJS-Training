@@ -1,21 +1,21 @@
-# React Training - Class 7 - Arrow Function Syntax
+# React Training - Class 8 - Event Handling
 
-This repository contains the source code for Class 7 of my React training series on YouTube.
+This repository contains the source code for Class 8 of my React training series on YouTube.
 
-In this class, the focus is on understanding Arrow Function Syntax in JavaScript by exploring all syntax variations, building demos, and demonstrating how to define functions using arrow notation. We cover everything from basic arrow functions to advanced variations with parameters, implicit returns, and more.
+In this class, the focus is on understanding Event Handling in React by exploring how to capture events like onClick, onChange, etc., and how to write event handlers. We cover everything from basic event handlers to inline event handlers and practical examples in React components.
 
 ## What We Covered In This Class
 
-- what arrow functions are in JavaScript
-- different syntax variations of arrow functions (with and without parentheses, braces, implicit returns)
-- how to define functions using arrow syntax
-- examples and demos of arrow functions in action
-- comparison with traditional function declarations
-- best practices for using arrow functions
+- what event handling is in React
+- different types of events (onClick, onChange, etc.)
+- how to write event handlers using defined functions
+- inline event handlers and their syntax
+- examples and demos of event handling in action
+- best practices for using event handlers in React
 
 ## What You Will Find In This Repo
 
-This codebase is intentionally simple and beginner-friendly so learners can clearly understand arrow function syntax variations in real usage.
+This codebase is intentionally simple and beginner-friendly so learners can clearly understand event handling concepts in real usage.
 
 It includes:
 
@@ -24,8 +24,8 @@ It includes:
 - a reusable `Header` component
 - a reusable `CourseItem` component
 - a reusable UI-only `Card` component in `src/components/ui/card/`
-- a `Demo` component in `src/components/demo/` showcasing arrow function examples
-- examples of different arrow function syntax variations
+- a `Demo` component in `src/components/demo/` showcasing event handling examples
+- examples of different event handling patterns (defined handlers and inline handlers)
 
 ## Project Structure
 
@@ -68,9 +68,10 @@ udemy/
 
 `src/components/demo/Demo.jsx`
 
-- contains examples of arrow function syntax
-- demonstrates different ways to define and use arrow functions
-- shows practical usage of arrow functions in a React component
+- contains examples of event handling in React
+- demonstrates how to use onClick and onChange events
+- shows both defined event handlers and inline event handlers
+- practical usage of event handling in a React component
 
 `src/components/ui/card/Card.jsx`
 
@@ -91,25 +92,25 @@ udemy/
 
 ## Why This Class Is Important
 
-Arrow functions are a fundamental part of modern JavaScript and are extensively used in React development. Understanding their syntax variations is crucial for writing clean, concise code.
+Event handling is a fundamental part of building interactive React applications. Understanding how to capture and respond to user interactions is crucial for creating dynamic user interfaces.
 
 This class helps learners understand:
 
-- the different ways to write arrow functions
-- when to use parentheses and braces
-- implicit vs explicit returns
-- how arrow functions differ from traditional functions
-- best practices for arrow function usage in JavaScript and React
+- the basics of event handling in React
+- different event types and their use cases
+- how to write clean and effective event handlers
+- the difference between defined and inline event handlers
+- best practices for event handling in React components
 
 ## Current Output
 
 At this stage, the app renders:
 
-- a `Header` component at the top
-- an ordered list of course names
-- each course item wrapped inside a reusable `Card`
-- an extra `Card` example with a heading and login button
-- a `Demo` component showcasing arrow function examples
+- a `Header` component with "Event Handling" title
+- a greeting message using a function call
+- interactive buttons demonstrating onClick events
+- an input field with onChange event handling
+- examples of both inline and defined event handlers
 
 ## Getting Started
 
@@ -141,11 +142,11 @@ npm run preview
 
 After this class, learners should understand:
 
-- how to write arrow functions in different syntax variations
-- the differences between arrow functions and traditional function declarations
-- when to use implicit returns
-- how to handle parameters in arrow functions
-- practical usage of arrow functions in JavaScript code
+- how to handle events in React components
+- the syntax for attaching event handlers to JSX elements
+- when to use defined event handlers vs inline handlers
+- how to access event objects and target values
+- practical implementation of event handling in real React apps
 
 ## Notes
 
@@ -155,4 +156,4 @@ After this class, learners should understand:
 
 ## Follow Along
 
-If you are coming from YouTube, clone this repository, run the project locally, and follow along with Class 7 step by step while practicing arrow function syntax and its variations on your own.
+If you are coming from YouTube, clone this repository, run the project locally, and follow along with Class 8 step by step while practicing event handling concepts and building interactive components on your own.
