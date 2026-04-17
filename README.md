@@ -1,21 +1,21 @@
-# React Training - Class 8 - Event Handling
+# React Training - Class 9 - useState Hook
 
-This repository contains the source code for Class 8 of my React training series on YouTube.
+This repository contains the source code for Class 9 of my React training series on YouTube.
 
-In this class, the focus is on understanding Event Handling in React by exploring how to capture events like onClick, onChange, etc., and how to write event handlers. We cover everything from basic event handlers to inline event handlers and practical examples in React components.
+In this class, the focus is on understanding the useState Hook in React by exploring what hooks are, the purpose of useState, its syntax, and how to manage state in functional components. We cover everything from basic state management to practical examples using useState in React components.
 
 ## What We Covered In This Class
 
-- what event handling is in React
-- different types of events (onClick, onChange, etc.)
-- how to write event handlers using defined functions
-- inline event handlers and their syntax
-- examples and demos of event handling in action
-- best practices for using event handlers in React
+- what hooks are in React
+- what is the purpose of useState hook
+- its syntax and how to use it
+- how to manage state in functional components
+- examples and demos of useState in action
+- best practices for using useState in React
 
 ## What You Will Find In This Repo
 
-This codebase is intentionally simple and beginner-friendly so learners can clearly understand event handling concepts in real usage.
+This codebase is intentionally simple and beginner-friendly so learners can clearly understand useState hook concepts in real usage.
 
 It includes:
 
@@ -24,8 +24,8 @@ It includes:
 - a reusable `Header` component
 - a reusable `CourseItem` component
 - a reusable UI-only `Card` component in `src/components/ui/card/`
-- a `Demo` component in `src/components/demo/` showcasing event handling examples
-- examples of different event handling patterns (defined handlers and inline handlers)
+- a `Demo` component in `src/components/demo/` showcasing useState examples
+- examples of state management patterns using useState
 
 ## Project Structure
 
@@ -68,10 +68,10 @@ udemy/
 
 `src/components/demo/Demo.jsx`
 
-- contains examples of event handling in React
-- demonstrates how to use onClick and onChange events
-- shows both defined event handlers and inline event handlers
-- practical usage of event handling in a React component
+- contains examples of useState hook in React
+- demonstrates how to use useState for managing component state
+- shows updating state with setState function
+- practical usage of useState in a React component
 
 `src/components/ui/card/Card.jsx`
 
@@ -92,25 +92,24 @@ udemy/
 
 ## Why This Class Is Important
 
-Event handling is a fundamental part of building interactive React applications. Understanding how to capture and respond to user interactions is crucial for creating dynamic user interfaces.
+State management is a fundamental part of building dynamic React applications. Understanding how to use the useState hook is crucial for creating interactive user interfaces that respond to user actions and data changes.
 
 This class helps learners understand:
 
-- the basics of event handling in React
-- different event types and their use cases
-- how to write clean and effective event handlers
-- the difference between defined and inline event handlers
-- best practices for event handling in React components
+- the basics of hooks and the useState hook in React
+- how to declare and initialize state variables
+- how to update state and trigger component re-renders
+- best practices for state management in React components
 
 ## Current Output
 
 At this stage, the app renders:
 
-- a `Header` component with "Event Handling" title
-- a greeting message using a function call
-- interactive buttons demonstrating onClick events
-- an input field with onChange event handling
-- examples of both inline and defined event handlers
+- a `Header` component with "useState Hook" title
+- a greeting message that updates with state changes
+- interactive buttons demonstrating state updates
+- a counter that increments using state
+- examples of using useState with strings and numbers
 
 ## Getting Started
 
@@ -142,11 +141,10 @@ npm run preview
 
 After this class, learners should understand:
 
-- how to handle events in React components
-- the syntax for attaching event handlers to JSX elements
-- when to use defined event handlers vs inline handlers
-- how to access event objects and target values
-- practical implementation of event handling in real React apps
+- how to use the useState hook in React components
+- the syntax for declaring and initializing state variables
+- how to update state and trigger re-renders
+- practical implementation of state management in real React apps
 
 ## Notes
 
@@ -156,4 +154,4 @@ After this class, learners should understand:
 
 ## Follow Along
 
-If you are coming from YouTube, clone this repository, run the project locally, and follow along with Class 8 step by step while practicing event handling concepts and building interactive components on your own.
+If you are coming from YouTube, clone this repository, run the project locally, and follow along with Class 9 step by step while practicing useState hook concepts and building stateful components on your own.

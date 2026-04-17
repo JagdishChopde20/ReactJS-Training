@@ -1,31 +1,26 @@
+import { useState } from "react";
 import Header from "../header/Header";
 
 const Demo = () => {
-    const greetUser = (greetMsg, userName) => `${greetMsg}, ${userName}!`;
-
-    const changeHandler = (event) => {
-        console.log(event.target.value);
+    // let userName = 'Jagdish';
+    const [userName, setUserName] = useState('Jagdish');
+    const [counter, setCounter] = useState(5);
+    
+    const clickHandler = () => {
+        setUserName('Sandeep');
+        console.log(userName);
     }
-
-    const clickHandler = (userName) => {
-        alert('My name is ' + userName);
-    }
-
+    
     return (
         <div>
-            <Header>Event Handling</Header>
+            <Header>useState Hook</Header>
 
-            <h1> { greetUser('Hey', 'Jagdish') } </h1>
-
-            <button onClick={() => { console.log('Button Clicked!'); }}>Click Me</button>
-
-            <hr />
-
-            <input type="text" onChange={changeHandler} />
+            <h1>Hi, { userName } </h1>
+            <button onClick={clickHandler}>Change User Name</button>
 
             <hr />
-
-            <button onClick={() => clickHandler('Sandeep')}>Who Am I</button>
+            <h1>Counter: { counter } </h1>
+            <button onClick={() => setCounter(preState => preState + 1 )}>Increment Counter</button>
         </div>
     );
 }
