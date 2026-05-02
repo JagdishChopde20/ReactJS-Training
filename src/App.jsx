@@ -5,17 +5,16 @@ import Card from './components/ui/card/Card'
 
 function App() {
   // js code
+  const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'Python', 'AWS'];
   
   return (
     <div>
       <Header>Udemy</Header>
       
       <ol id='id1'>
-        <CourseItem courseName="HTML"/>
-        <CourseItem courseName="CSS" />
-        <CourseItem courseName="JavaScript" />
-        <CourseItem courseName="React" />
-        <CourseItem courseName="Angular" />
+        {
+          courses.map((course) => <CourseItem key={course} courseName={course}/>)
+        }
       </ol>
 
       <hr />

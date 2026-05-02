@@ -6,7 +6,7 @@ import Demo from './components/demo/Demo.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App /> */}
-    <Demo />
+    <App />
+    {/* <Demo /> */}
   </StrictMode>,
 )
